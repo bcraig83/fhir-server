@@ -462,7 +462,6 @@
   <data name="ChangesToSearchParametersNotAllowedWhileReindexing" xml:space="preserve">
     <value>Changes to seach parameters is not allowed while a reindex job is ongoing.  Wait for the reindex job to finish, or cancel it.</value>
   </data>
-</root>
   <data name="ExportFormatNotFound" xml:space="preserve">
     <value>The format '{0}' could not be found.</value>
     <comment>{0}: The provided format name</comment>
