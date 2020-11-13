@@ -24,6 +24,6 @@ namespace Microsoft.Health.Fhir.Core.Features.Security
         Reindex = 1 << 6,
 
         [EnumMember(Value = "*")]
-        All = (ResourceValidate << 1) - 1,
+        All = (Reindex << 1) - 1,
     }
 }
