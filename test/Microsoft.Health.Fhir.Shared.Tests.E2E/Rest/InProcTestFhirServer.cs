@@ -45,6 +45,9 @@ namespace Microsoft.Health.Fhir.Tests.E2E.Rest
             // For local development we will use the Azure Storage Emulator for export.
             configuration["FhirServer:Operations:Export:StorageAccountConnection"] = "UseDevelopmentStorage=true";
 
+            // enable reindex for testing
+            configuration["FhirServer:Operations:Reindex:Enabled"] = "true";
+
             var builder = WebHost.CreateDefaultBuilder()
                 .UseContentRoot(Path.GetDirectoryName(startupType.Assembly.Location))
                 .ConfigureAppConfiguration(configurationBuilder =>
